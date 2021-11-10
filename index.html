@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,9 +30,66 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row">
+        <!--9am hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="9" class="mr-4 time-block">9am</label>
+          <textarea id="9" class="form-control" data-hour="9" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--10am hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-3 time-block" data-hour="10">10am</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--11am hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-3 time-block" data-hour="11">11am</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--12pm hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-3 time-block" data-hour="12">12pm</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--1pm hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-4 time-block" data-hour="13">1pm</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--2pm hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-4 time-block" data-hour="14">2pm</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--3pm hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-4 time-block" data-hour="15">3pm</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--4pm hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-4 time-block" data-hour="16">4pm</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+        <!--5pm hour-->
+        <div class="container col-12 hour d-flex justify-content-center">
+          <label for="event" class="mr-4 time-block" data-hour="17">5pm</label>
+          <textarea id="event" class="form-control" rows="2" placeholder="event goes here"></textarea>
+          <button class="saveBtn">Save</button>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
   </body>
 </html>
