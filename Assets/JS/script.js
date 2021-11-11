@@ -59,6 +59,17 @@ var checkLocalStorage = function() {
     }
 };
 
+var loadEvents = function() {
+    var schedule = JSON.parse(localStorage.getItem("Scheduler"));
+    if (schedule) {
+        if (schedule.date === moment().format('dddd, MMMM Do YYYY')) {
+            for (var i = 9; i < 18; i++) {
+                $("#" + i).children("textarea").val(schedule[i]);
+            }
+        }
+    }
+};
+
 $(".saveBtn").click(function() {
     var hour = $(this).parent().attr("id");
     var text = $(this).parent().children("textarea").val();
@@ -70,3 +81,4 @@ $(".saveBtn").click(function() {
 
 timeOfDay();
 setInterval(timeOfDay, (1000 * 60));
+loadEvents();
