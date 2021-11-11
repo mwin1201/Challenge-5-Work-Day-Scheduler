@@ -13,6 +13,7 @@ var dailyEvents = {
     17: ""
 };
 
+
 var timeOfDay = function() {
     var currentHour = moment().hour();
     var textAreaEl = document.querySelectorAll("textarea");
@@ -77,6 +78,10 @@ $(".saveBtn").click(function() {
         alert("You cannot save an empty event. Please enter something.");
     }
     saveEvents(hour, text);
+    $("#save-confirmation").html('<span class="oi oi-thumb-up">Saved to LocalStorage</span>');
+    setInterval(function() {
+        $("#save-confirmation").html("");
+    }, 1000);
 });
 
 timeOfDay();

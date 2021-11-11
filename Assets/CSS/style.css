@@ -25,6 +25,11 @@ textarea{
   white-space: pre-wrap;
 }
 
+#save-confirmation {
+  color: green;
+  text-align: center;
+}
+
 .time-block{
   text-align: center;
   border-radius: 15px;

@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!--added to use icons in Scheduler-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -29,61 +31,62 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      <p id="save-confirmation"></p>
       <!-- Timeblocks go here -->
       <div class="row">
         <!--9am hour-->
         <div id="9" class="container col-12 hour d-flex justify-content-center">
           <label for="nine-event" class="mr-4 time-block">9am</label>
           <textarea id="nine-event" class="form-control" data-hour="9" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--10am hour-->
         <div id="10" class="container col-12 hour d-flex justify-content-center">
           <label for="ten-event" class="mr-3 time-block">10am</label>
           <textarea id="ten-event" class="form-control" data-hour="10" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--11am hour-->
         <div id="11" class="container col-12 hour d-flex justify-content-center">
           <label for="eleven-event" class="mr-3 time-block">11am</label>
           <textarea id="eleven-event" class="form-control" data-hour="11" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--12pm hour-->
         <div id="12" class="container col-12 hour d-flex justify-content-center">
           <label for="twelve-event" class="mr-3 time-block">12pm</label>
           <textarea id="twelve-event" class="form-control" data-hour="12" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--1pm hour-->
         <div id="13" class="container col-12 hour d-flex justify-content-center">
           <label for="one-event" class="mr-4 time-block">1pm</label>
           <textarea id="one-event" class="form-control" data-hour="13" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--2pm hour-->
         <div id="14" class="container col-12 hour d-flex justify-content-center">
           <label for="two-event" class="mr-4 time-block">2pm</label>
           <textarea id="two-event" class="form-control" data-hour="14" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--3pm hour-->
         <div id="15" class="container col-12 hour d-flex justify-content-center">
           <label for="three-event" class="mr-4 time-block">3pm</label>
           <textarea id="three-event" class="form-control" data-hour="15" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--4pm hour-->
         <div id="16" class="container col-12 hour d-flex justify-content-center">
           <label for="four-event" class="mr-4 time-block">4pm</label>
           <textarea id="four-event" class="form-control" data-hour="16" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
         <!--5pm hour-->
         <div id="17" class="container col-12 hour d-flex justify-content-center">
           <label for="five-event" class="mr-4 time-block">5pm</label>
           <textarea id="five-event" class="form-control" data-hour="17" rows="2" placeholder="event goes here"></textarea>
-          <button class="saveBtn">Save</button>
+          <button class="saveBtn"><span class="oi oi-plus"></span>Save</button>
         </div>
       </div>
     </div>
