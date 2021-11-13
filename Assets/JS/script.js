@@ -19,21 +19,17 @@ var dailyEvents = {
 var timeOfDay = function() {
     var currentHour = moment().hour();
     var textAreaEl = document.querySelectorAll("textarea");
-    //setInterval(function() {
-        for (var i = 0; i < textAreaEl.length; i++) {
-            if (parseInt(textAreaEl[i].getAttribute("data-hour")) > currentHour) {
-                textAreaEl[i].classList.add("future");
-            }
-            else if (parseInt(textAreaEl[i].getAttribute("data-hour")) < currentHour) {
-                textAreaEl[i].classList.add("past");
-            }
-            else {
-                textAreaEl[i].classList.add("present");
-            }
+    for (var i = 0; i < textAreaEl.length; i++) {
+        if (parseInt(textAreaEl[i].getAttribute("data-hour")) > currentHour) {
+            textAreaEl[i].classList.add("future");
         }
-        console.log("1 minute");
-        // run the interval loop every minute
-   // }, (1000 * 60));
+        else if (parseInt(textAreaEl[i].getAttribute("data-hour")) < currentHour) {
+            textAreaEl[i].classList.add("past");
+        }
+        else {
+            textAreaEl[i].classList.add("present");
+        }
+    }
 };
 
 // saves events to LocalStorage
